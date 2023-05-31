@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        {% load static %}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+    <body>
+    <!--Add a registration form here -->
+        <div class="container">
+
+            <h1>Login Users</h1>
+            <hr>
+            <form action="" method="post">
+            {% csrf_token %}
+                <!--<div class= "card m-2">-->
+                    <!--<div class="card body">-->
+                        
+                            <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" placeholder="Enter your Username" required>
+                            </div>
+                            <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                            </div>
+                            <div class="mb-3">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="reset" class="btn btn-secondary">Clear</button>
+                            </div>
+                            <!--</div>-->
+                <!--</div>-->
+            </form>
+        </div>
+    </body>
+</html>
